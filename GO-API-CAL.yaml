@@ -1,0 +1,179 @@
+_type: export
+__export_format: 4
+__export_date: 2024-08-23T03:59:26.284Z
+__export_source: insomnia.desktop.app:v9.3.3
+resources:
+  - _id: req_32b39a7ebff74012a0985ed68a78c0d3
+    parentId: fld_9e508869d5334c85b8fcb483e6fc89a2
+    modified: 1724380228687
+    created: 1724380220218
+    url: http://localhost:3000/add
+    name: Add two numbers
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"number1": 0, "number2": 0}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1724380218668
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_9e508869d5334c85b8fcb483e6fc89a2
+    parentId: wrk_c91de11ed7914d0f85d61cafb4968883
+    modified: 1724380220216
+    created: 1724380220216
+    name: Calculator API
+    description: API for basic arithmetic operations
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1724380218669
+    preRequestScript: ""
+    afterResponseScript: ""
+    authentication: {}
+    _type: request_group
+  - _id: wrk_c91de11ed7914d0f85d61cafb4968883
+    parentId: null
+    modified: 1724380220214
+    created: 1724380220214
+    name: Calculator API
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_a4b72900c9a74149a567d7241672f4d4
+    parentId: fld_9e508869d5334c85b8fcb483e6fc89a2
+    modified: 1724385276025
+    created: 1724380220219
+    url: http://localhost:3000/subtract
+    name: Subtract two numbers
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"number1": 4, "number2": 3}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1724380218667
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f7cdae0cf350481ea69448508cb83fc3
+    parentId: fld_9e508869d5334c85b8fcb483e6fc89a2
+    modified: 1724380220220
+    created: 1724380220220
+    url: http://localhost:3000/multiply
+    name: Multiply two numbers
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"number1": 0, "number2": 0}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1724380218666
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_32590f30e3d044cda474db8dbd83c13d
+    parentId: fld_9e508869d5334c85b8fcb483e6fc89a2
+    modified: 1724380244462
+    created: 1724380220221
+    url: http://localhost:3000/divide
+    name: Divide two numbers
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"dividend": 0, "divisor": 0}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1724380218665
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f834eb928469491693decf8c2649062e
+    parentId: fld_9e508869d5334c85b8fcb483e6fc89a2
+    modified: 1724384343835
+    created: 1724380220222
+    url: http://localhost:3000/sum
+    name: Sum of numbers
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"sum1": 2, "sum2": 3}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1724380218664
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_61abef740d66a7f2530123f1144fc25ff3faf19d
+    parentId: wrk_c91de11ed7914d0f85d61cafb4968883
+    modified: 1724380221649
+    created: 1724380221649
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1724380221649
+    _type: environment
+  - _id: jar_61abef740d66a7f2530123f1144fc25ff3faf19d
+    parentId: wrk_c91de11ed7914d0f85d61cafb4968883
+    modified: 1724380221651
+    created: 1724380221651
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
